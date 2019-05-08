@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%=results[0].type1%>
+    </title>
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-CSS -->
+
+    <!-- Style-CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font-Awesome-Icons-CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/jquery.superslides.min.js"></script>
+
+    <link rel="stylesheet" href="css/thanhTopStyle.css">
+    <link rel="stylesheet" href="css/mayBeYouLike.css">
+    <link rel="stylesheet" href="css/styleTrangchu.css">
+
+
+
+</head>
+
+<body>
+    <!--thanh dieu huong-->
+    <!--thanh dieu huong-->
+    <nav id="navigation" class="navbar navbar-expand-lg navAdd">
+        <a class="navbar-brand" href="/">TRANG CHỦ</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link " href="/bongda">
+                             Bóng đá
+                            <span class="sr-only">(current)</span>
+                        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/kinhdoanh">Kinh Doanh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/thitruong">Thị trường</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/suckhoe">Sức Khỏe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/hitech">Hi-tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/showbiz">Showbiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/thegioi">Thế giới</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phaidep">Phái đẹp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/amthuc">Ẩm thực</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!--may be you like---->
+    <section class="blog_w3ls py-5" id="more" style="background-color:greenyellow">
+        <div class="container py-xl-5 py-lg-3">
+
+            <div class="row">
+                <% 
+                    results.forEach(function(rows){
+                    %>
+                    <!-- blog grid -->
+                    <div class="col-lg-4">
+                        <div class="med-blog">
+
+                            <div class="blog-header">
+                                <a href="/<%=rows.type%>/<%=rows.id%>">
+                                    <img class="img-fluid" src="<%=rows.image2%>" alt="image">
+                                </a>
+                            </div>
+
+                            <div class="blog-body bg-wh p-4 mauNen">
+                                <span><%=rows.time%></span>
+                                <br>
+                                <a href="/<%=rows.type%>/<%=rows.id%>" class="blog-title">
+                                    <%=rows.name%>
+                                </a>
+                                <p>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- //blog grid -->
+                    <%
+                    }) 
+                    %>
+            </div>
+
+        </div>
+
+    </section>
+    <div style="text-align: center"><a href="/feedback">GÓP Ý</a></div>
+</body>
+
+</html>

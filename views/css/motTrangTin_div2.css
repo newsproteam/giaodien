@@ -1,0 +1,80 @@
+﻿
+/*TIN NHÁY NHÁY---------------------------------------------------------------------------------------------*/
+
+.anh_qc_cot2 {
+    width: 400px;
+    height: 400px;
+    background-image: url('../anh/thuongDinh.png');
+    background-repeat: no-repeat;
+    -webkit-animation: anh_qc 20s infinite;
+}
+
+@-webkit-keyframes anh_qc {
+    0% {
+        background-image: url('../anh/thuongDinh.png');
+        background-repeat: no-repeat
+    }
+    25% {
+        background-image: url('../anh/anh_qc_cot2.png');
+        background-repeat: no-repeat
+    }
+    50% {
+        background-image: url('../anh/anh_qc_cot2_1.png');
+        background-repeat: no-repeat
+    }
+    75% {
+        background-image: url('../anh/anh_qc_cot2_2.png');
+        background-repeat: no-repeat
+    }
+}
+
+
+/*-----------------TIN TỨC THỊ TRƯỜNG-----------------------------------------------------------------------*/
+
+.tinPhu {
+    float: left;
+}
+
+.anhtinPhu {
+    float: left;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 7px;
+    width: 33.32%;
+}
+
+
+/*đến tin trong 1 khung-showbiz*/
+
+.showbiz {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.showbiz:hover {
+    color: #378b36;
+}
+
+
+/*tin tức thi trường*/
+
+.anhtinPhu+div>a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+
+.anhtinPhu+div>a:hover {
+    color: #378b36;
+}
+
+.anhtinPhu+div {
+    float: left;
+    width: 60%;
+}
+
+
+/*dời sống sobizz*/

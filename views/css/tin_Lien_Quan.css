@@ -1,0 +1,75 @@
+/*tin liên quan*/
+#tinLienQuan{
+    font-size: 17px;
+    color: #7bd421;
+    border-bottom: 4px solid #78cc23;
+    line-height: 30px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 600;
+}
+.tin_lq{
+    margin-bottom: 20px;width: 850px;
+}
+.mot_tin_lq{
+    width:230px;float: left;margin-right: 40px;background-color: #f1f1f1;
+}
+.chuTlq{
+    text-decoration: none;
+    font-size: 15px;
+    height: 54px;
+    line-height: 1.2;
+    color: #333;
+    font-weight: 600;
+    font-family: Arial,Helvetica,sans-serif;
+}
+/*
+<div style="display:block;margin-bottom: 20px;">
+                <div style="margin-bottom: 20px;">
+                    <header id="tinLienQuan">Tin Liên Quan</header>
+                </div>
+                <!--hàng 1---------------------------------------------------->
+                <div class="tin_lq">
+                        <div class="mot_tin_lq" >
+                                <a href="#"><img src="anh/c1_tlq1.jpg" alt="" style="width: 100%;"></a>  
+                                <div style="width:230px;">                          
+                                       <a href="#" class="chuTlq"> Hậu Siêu kinh điển, rung chuyển Real: Mourinho đến, “ông trùm” tống cổ...</a>
+                                </div>
+                            </div>
+                            <div class="mot_tin_lq">
+                                    <a href="#"><img src="anh/c1_tlq2.jpg" alt="" style="width: 100%;"></a> 
+                                    <div style="width:230px;">                          
+                                            <a href="#" class="chuTlq"> Hậu Siêu kinh điển, rung chuyển Real: Mourinho đến, “ông trùm” tống cổ...</a>
+                                    </div>
+                                </div>
+                            <div class="mot_tin_lq">
+                                    <a href="#"><img src="anh/t1_tlq3.jpg" alt="" style="width: 100%;"></a> 
+                                        <div style="width:230px;">                          
+                                                <a href="#" class="chuTlq"> Hậu Siêu kinh điển, rung chuyển Real: Mourinho đến, “ông trùm” tống cổ...</a>       
+                                        </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                </div>
+                <!---hàng 2-------------------------------------------------->
+                <div class="tin_lq">
+                        <div class="mot_tin_lq">
+                                <a href="#"><img src="anh/t1_tlq4.jpg" alt="" style="width: 100%;"></a> 
+                                <div style="width:230px;">                          
+                                        <a href="#" class="chuTlq"> Hậu Siêu kinh điển, rung chuyển Real: Mourinho đến, “ông trùm” tống cổ...</a>
+                                </div>
+                            </div>
+                            <div class="mot_tin_lq">
+                                    <a href="#"><img src="anh/t1_tlq5.jpg" alt="" style="width: 100%;"></a> 
+                                    <div style="width:230px;">                          
+                                            <a href="#" class="chuTlq"> Hậu Siêu kinh điển, rung chuyển Real: Mourinho đến, “ông trùm” tống cổ...</a>
+                                    </div>
+                                </div>
+                            <div class="mot_tin_lq">
+                                    <a href="#"><img src="anh/t1_tlq6.jpg" alt="" style="width: 100%;"></a> 
+                                        <div style="width:230px;">                          
+                                                <a href="#" class="chuTlq"> Hậu Siêu kinh điển, rung chuyển Real: Mourinho đến, “ông trùm” tống cổ...</a>
+                                        </div>
+                            </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+*/

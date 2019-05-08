@@ -1,0 +1,42 @@
+/*---*/
+
+.section {
+    padding: 50px 0;
+}
+
+
+/*------------NAV------*/
+
+#navigation {
+    background-color: rgb(90, 70, 70);
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li:hover {
+    background-color: rgb(224, 129, 129);
+}
+
+#navigation li a {
+    color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background: url(../anh/icon/menu.png)!important;
+    background-size: 100%!important;
+}
+
+.fixedNav #navigation {
+    position: fixed!important;
+    top: 0;
+}
