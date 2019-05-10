@@ -32,18 +32,17 @@ con.connect();
 app.get("/", function(req, res) {
     var sql = "select * from bongda where hot='YY' " +
         "union select * from kinhdoanh where hot='YY' " +
+         "union select * from hitech where hot='YY' " +
         "union select * from thitruong where hot='YY' " +
-        "union select * from suckhoe where hot='YY' " +
-        "union select * from hitech where hot='YY' " +
         "union select * from showbiz where hot='YY' " +
-        "union select * from thegioi where hot='YY' " +
-        "union select * from thethao where hot='YY' " +
-        "union select * from phaidep where hot='YY' " +
-        "union select * from amthuc where hot='YY' ";
+        "union select * from suckhoe where hot='YY' " +
+        "union select * from phaidep where hot='YY'  " +
+        "union select * from amthuc where hot='YY' " +
+         "union select * from thegioi where hot='YY' "  ;
     con.query(sql, function(error, results, fields) {
         if (error) throw error;
         else {
-            res.render('home', { results });
+            res.render('home2', { results });//results laf 
         }
     });
 });

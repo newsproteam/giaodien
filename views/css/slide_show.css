@@ -1,0 +1,74 @@
+.main-content .owl-carousel{
+    position: relative;
+    width: 1000px;
+  
+
+    }
+    .slide_hot_week{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .main-content .inner{
+        box-shadow: 0px 1px 2px #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+     .padding .time{
+        font-size: 10px;
+        letter-spacing: .5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .padding .category{
+        font-size: 10px;
+        letter-spacing: .5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 10px;
+    }
+    .category a{
+        color: #FC624D;
+    }
+    .inner h2 a{
+        color: #333;
+    }
+    .inner h2 a:hover{
+        color: #FC624D;
+    }
+    .inner h2 {
+        font-size: 16px;
+    }
+    .inner p{
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .item{
+        width: 270px;
+    }
+    .inner .detail{
+        display: flex;
+        margin-bottom: 5px;    
+    }
+   .inner .padding{
+       padding: 15px;
+       padding-top: 0px;
+   }
+   .inner .figure{
+       margin-bottom: 10px;
+       overflow: hidden;
+       display: inline-block;
+   }
+   .text_hot_week{
+    position: relative;
+    font-size: 17px;
+    color: #ef7930;
+    text-transform: uppercase;
+    margin-top: 44px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    
+   }
+   .owl-prev{
+       background-color: red;
+   }

@@ -1,0 +1,317 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+   
+}
+
+/*--------------HEADING ---------------------*/
+.hdr {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background: #78b43d;
+    margin: 0 auto;
+    top:0px;
+    background-attachment: scroll!important;
+}
+
+/*.hdr .menu_bar{
+    width: 75%;
+    margin: 0 auto;
+}*/
+
+div{
+    display: block;
+}
+
+.contnr{
+    margin: 0 auto;
+    width: 1004px;
+    background: #fff;
+}
+
+
+/*----------------Menu right---------------*/
+#contnr_right{
+    position: relative;
+}
+
+.tpMnRt {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 815px;
+}
+
+.tpMnRtx ul{
+    border-right: #90c95a solid 1px;
+    
+}
+
+.tpMnRt ul{
+    height: 50px;
+    line-height: 40px;
+    width: 760px;
+    float: left;
+    /*margin-left: -140px;*/
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tpMnRt ul li{
+    padding: 0 3px;
+    float: initial;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+.tpMnRtx ul li{
+    height: 45px;
+    padding-top: 5px;
+}
+
+.rlt{
+    position: relative;
+}
+
+.tpMnRtx ul li a:first-child{
+    height: 10px;
+    display: block;
+
+    margin-bottom: 4px;
+}
+
+.tpMnRtx ul li a{
+    text-decoration: none; /*khong gach chan*/
+}
+
+.contnr .tpMnRtx ul li a .tit{
+    font-size: 10px;
+    padding: 0 1px;
+    border: 0;
+    margin: 0;
+    /*vertical-align: middle;*/
+}
+
+.tpMnRt ul li a.tit{
+    font-size: 10px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0 7px 0 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+/*--------------Search--------------------*/
+
+.tpMnRt .icoSch{
+    position: absolute;
+    border-right: #90c95a solid 1px;
+    height: 50px;
+    padding-right: 8px;
+    padding-top: 5px;
+}
+
+.tpMnRtx .icoSch{
+    right: 0;
+}
+
+.tpMnRt .icoSch:hover {
+    width: 100%;
+}
+
+.hsFedBck {
+    float: right;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.icoSch form {
+    margin-top: -1px!important;
+}
+
+.icoSch .hsFedBck input[placeholder] {
+    opacity: 0;
+}
+
+.hsFedBck .frmctrl {
+    background: transparent;
+    box-shadow: none;
+    display: block;
+    width: 98%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+
+.hsFedBck a {
+    position: absolute;
+    right: 6px;
+    top: 8px;
+}
+
+.icoSearTop {
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4887px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/*#icon_search{
+    position: absolute;
+    right: 145px;
+    bottom: 28px;
+}*/
+
+
+/*------------------------------------------*/
+/*--------------Menu Left------------------*/
+
+
+.log{
+    float: left;
+    width: 90px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logoOld {
+    padding-top: 5px;
+    left: 0;
+}
+.hmClk {
+    position: absolute;
+    height: 50px;
+    left: -1px;
+}
+
+.hmClk img{
+    border: 0;
+}
+
+/*------------------------Danh muc------------*/
+.mnTp{
+    width: 80px; /*70px*/
+    float: left;
+    border-left: #90c95a solid 1px;
+    border-right: #90c95a solid 1px;
+    height: 50px;
+    padding: 12px 0 0 10px;
+}
+
+
+.nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    left: -101px;
+    top: -9px;
+}
+
+.mnTp ul{
+    width: 182px;
+    margin-right: 0;
+    font-size: 11px;
+    margin-bottom: -1px;
+}
+
+.mnTp ul, .mnTp ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#headerd .sbLix {
+    margin-top: -50010px;
+    margin-left: -21px;
+}
+
+.nav .sbLi {
+    width: 100%;
+}
+
+.mnTp .nav {
+    width: 182px;
+    margin-right: 0;
+    font-size: 10px;
+    margin-bottom: -1px;
+}
+
+.nav li{
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-size: 10px;
+    position: relative;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.mnTp .nav .sbLi a {
+    font-size: 10px;
+    background: url(//cdn.24h.com.vn/images/2014/menu-top-xem-danh-muc.gif) no-repeat 0 0;
+    height: 23px;
+    border: 0;
+    color: #fff;
+    background-position: 40px 0;
+    padding-top: 29px!important;
+    text-transform: uppercase;
+}
+
+.nav a {
+    position: relative;
+    width: 157px;
+    margin-right: -181px;
+    float: left;
+    font-weight: 400;
+    text-align: left;
+    line-height: 16px;
+    padding: 6px 0 5px 25px !important;
+}
+
+.sbA {
+    margin-top: 50000px;
+}
+
+a{
+    text-decoration: none;
+}
+#danh_muc_text{
+    position:relative;
+    font-size: 11px;
+    text-transform: uppercase;
+    top:22px;
+
+}
+#danh_muc_icon{
+    position: relative;
+    bottom: 15px;
+    right:7px;
+}
+.hdr_mobile{
+    display: none;
+}
+.zn-container_reponsive, .l-container_reponsive{
+    display: none;
+}
+/*REPONSIVE TOP*/
+
+   
