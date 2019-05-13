@@ -1,21 +1,13 @@
-.bang {
-    width: 100%;
+.bang{
+    width: 670px;
 }
-
-table,
-tr,
-th,
-td {
-    border: 1px solid red;
+table,tr,th,td{
+    border:1px solid red;
 }
-
-tr,
-th,
-td {
-    margin: 1px;
+tr,th,td{
+    margin:1px;
     text-align: center;
 }
-
-.cotChan {
-    background-color: violet;
+.cotChan{
+    background-color:#b6e983;
 }

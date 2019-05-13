@@ -17,7 +17,7 @@ html{
     background: #78b43d;
     margin: 0 auto;
     top:0px;
-    background-attachment: scroll!important;
+    z-index: 1;
 }
 
 /*.hdr .menu_bar{
@@ -116,30 +116,26 @@ ul, li{
 
 /*--------------Search--------------------*/
 
-.tpMnRt .icoSch{
+/*-------------------search-----------------------*/
+
+.tpMnRt .icoSch {
+    float: right;
     position: absolute;
-    border-right: #90c95a solid 1px;
+    border-right: white solid 1px;
     height: 50px;
     padding-right: 8px;
     padding-top: 5px;
-}
-
-.tpMnRtx .icoSch{
     right: 0;
 }
 
-.tpMnRt .icoSch:hover {
-    width: 100%;
-}
-
-.hsFedBck {
+.hsFedBck{
     float: right;
-    width: 32px;
     height: 32px;
+    width: 32px;
     position: relative;
 }
 
-.icoSch form {
+.icoSch form{
     margin-top: -1px!important;
 }
 
@@ -148,14 +144,29 @@ ul, li{
 }
 
 .hsFedBck .frmctrl {
+    border: 0 none;
     background: transparent;
     box-shadow: none;
     display: block;
-    width: 98%;
+    width: 150%;
     height: 30px;
     font-size: 14px;
-    line-height: 1.42857143;
     color: #555;
+
+}
+
+.icoSch .hsFedBck:hover input[placeholder],
+.icoSch .hsFedBck:active input[placeholder]{
+    opacity: 1;
+}
+
+.icoSch .hsFedBck:hover .frmctrl,
+.icoSch .hsFedBck:active .frmctrl{
+    position: relative;
+    width: 780px;
+    height: 40px;
+    background-color: #fff;
+    right: 780px;
 }
 
 .hsFedBck a {
@@ -165,20 +176,11 @@ ul, li{
 }
 
 .icoSearTop {
-    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4887px;
+    background: url(http://cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4887px;
     display: inline-block;
     width: 24px;
     height: 24px;
 }
-
-
-
-/*#icon_search{
-    position: absolute;
-    right: 145px;
-    bottom: 28px;
-}*/
-
 
 /*------------------------------------------*/
 /*--------------Menu Left------------------*/

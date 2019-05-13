@@ -13,4 +13,34 @@
     color: #7d7d7d;
     text-align: center;
     padding: 10px 0 0;
+    margin-bottom: 10px;
 }
+.tintuc center{
+ color: blue;
+    font-size: 15px;
+
+}
+/*
+<!---phần cuối-->
+     <!---phần cuối trang-->
+     <div style="margin: 0 auto;text-align: center;background: #78b43d;padding: 5px;">
+            <a href="#" class="tabCuoi">Giới thiệu</a>|
+            <a href="#" class="tabCuoi">Góp ý</a>|
+            <a href="#" class="tabCuoi">Đầu trang</a>|
+            <a href="#" class="tabCuoi">LIÊN HỆ QUẢNG CÁO</a>
+    </div>
+     <!------>
+    <div class="chuCuoi">
+            <p>Cơ quan chủ quản: Công ty Cổ phần Quảng cáo Trực tuyến 24H Trụ sở: Tầng 12, Tòa nhà Geleximco, 36 Hoàng Cầu, Phường Ô Chợ Dừa, Quận Đống Đa, TP Hà Nội.
+                    Tel: (84-24) 73 00 24 24 hoặc (84-24) 3512 1806 - Fax: (84-24) 3512 1804. Chi nhánh: Tầng 7, Tòa nhà Việt Úc, 402 Nguyễn Thị Minh Khai, Phường 5, Quận 
+                    3, TP. Hồ Chí Minh. Tel: (84-28) 7300 2424 / Giấy phép số 332/GP – TT ĐT ngày cấp 22/01/2018 SỞ THÔNG TIN VÀ TRUYỀN THÔNG HÀ NỘI. Chịu trách nhiệm xuất 
+                    bản: Phan Minh Tâm. HOTLINE: 0965 08 24 24
+              </p>
+    </div>
+    <!----->  
+    <div style="text-align: center;width: 100%">
+        <a href="#">
+            <img src="anh/finally.png" alt="cc">
+        </a>
+    </div>
+*/

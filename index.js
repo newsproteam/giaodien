@@ -136,7 +136,7 @@ app.get('/:type', function(req, res) {
             if (error) {
                 throw error;
             } else {
-                res.render('type', { results });
+                res.render('GiaoDienChuDe', { results });
             }
         });
 });
@@ -150,7 +150,7 @@ app.get('/:type/:id', function(req, res) {
     con.query(sql, function(error, results, fields) {
         if (error) throw error;
         else {
-            res.render('MotTrangTin', { results });
+            res.render('GiaoDienBaiViet', { results });
         }
     });
 });

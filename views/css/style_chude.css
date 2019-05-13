@@ -1,0 +1,243 @@
+
+.flex-container{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.zn-container .zn__column--idx-0{
+    width:460px;
+    padding-right: 5px;
+}
+
+.zn-container .zn__column--idx-1{
+    width:240px;
+    padding-left: 5px;
+}
+
+.zn-container .zn__column--idx-2{
+    width:300px;
+}
+
+.title{
+    margin-top: 60px;
+   
+}
+
+p, h1{
+    text-transform: uppercase;
+    display: inline;
+    color: #404040;
+    font-size: 25px;
+}
+
+p{
+    border-right: black solid 2px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.item{
+    padding: 10px 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*------------TIN NONG----------------------------*/
+.item .img{
+    height: 350px;
+}
+
+.width-100 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inner{
+    margin-top: -150px;
+}
+
+.inner .name a{
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    transition: .3s; 
+    text-decoration: none;
+    padding: 10px;
+}
+
+.inner .name a:hover,
+.inner .name a:active{
+    font-size: 22px;
+}
+
+.inner div{
+    font-size: 15px;
+    color: #f1f1f1;
+    padding: 10px;
+}
+
+.zn__column--idx-1 .item .img{
+    height: 150px;
+}
+.inner1{
+    margin-top: -90px;
+}
+#item2{
+    margin-top: 5px;
+}
+
+.inner1 .name a{
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    transition: .3s; 
+    padding: 15px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.inner1 .name a:hover,
+.inner1 .name a:active{
+    font-size: 15px;
+}
+
+/*----------------TIN TRONG NUOC--------------------*/
+.l-container .zn__column--idx-0,.l-container .zn__column--idx-1{
+    width: 350px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: #ddd solid 1px;
+}
+
+.l-container .zn__column--idx-2{
+    width: 300px;
+}
+
+.bxDoiSbIt{
+    width: 336px;
+    float: left;
+    height: 200px;
+}
+
+#postx .bxDoiSbIt {
+    height: 145px;
+    overflow: hidden;
+}
+
+.nwsTit {
+    display: block;
+    color: #333;
+    padding: 0 0 5px;
+    margin: 0;
+}
+
+.bxDoiSbIt .nwsTit a {
+    font-weight: 600;
+    display: block;
+    height: 40px;
+    overflow: hidden;
+}
+
+.postname a {
+    font-size: 17px;
+}
+
+.postname a:hover, 
+.postname a:active{
+    color:#c00;
+}
+
+.postx .imgNws {
+    width: 130px;
+    height: 98px;
+}
+
+.nwsTit a {
+    color: #333;
+    font-weight: 600;
+}
+
+
+.imgFlt {
+    float: left;
+    margin-right: 10px;
+    display: block;
+}
+
+.vidIcoLt {
+    display: block;
+    bottom: 5px;
+    left: 5px;
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4515px;
+    width: 24px;
+    height: 24px;
+}
+
+.postx .imgNws img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bxDoiSbIt .nwsSp {
+    padding-left: 120px;
+    line-height: 18px;
+}
+
+.descd {
+    margin-bottom: 5px;
+}
+.nwsSp {
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    color: #333;
+}
+
+.nwsTit {
+    display: block;
+    color: #333;
+    padding: 0 0 5px;
+    margin: 0;
+}
+
+.dated {
+    font-size: 11px;
+}
+.updTm {
+    color: #999;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.dated .updTm {
+    font-size: 11px;
+}
+
+.l-container{
+    position: relative;
+    top: 10px;
+}
+
+.div-body{
+    width: 1000px;
+}
+
+
+.top
+{
+    display: flex;
+   
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
