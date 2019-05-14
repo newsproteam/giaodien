@@ -1,1 +1,172 @@
-<h1>Giiao Dien gioi thieu</h1>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        color: #777;
+    }
+    
+    .about-picture img{
+    width: 90%;
+    border-radius: 20px;
+    border: 4px solid #98c1e7;
+    box-shadow: 0px 5px 15px 5px #4189cc;
+    /*x, y, do mo, do phong rong, mau*/
+    transition: all .5s;
+    }
+
+    .about-picture:hover img, 
+.about-picture:active .picture-title{
+  filter: brightness(80%) blur(1px);
+}
+
+    h4{
+        font-weight: 600;
+    }
+
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/" class="w3-bar-item w3-button"><b>News Online</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="https://ak6.picdn.net/shutterstock/videos/2144996/thumb/1.jpg" alt="Architecture"
+            width="1500" height="800" style="height:600px">
+        <div class="w3-display-middle w3-margin-top w3-center" style="margin-left: -200px">
+            <h1>Website tin tức, giải trí tổng hợp </h1>
+            <h1>tại Việt Nam</h1>
+        </div>
+
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <!-- Project Section -->
+        <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-size: 27px; font-weight: 500; color: #265077">
+                Projects </h3>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l4 m5 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLBZfmVH7j9kV_FdZhVX0x0sxkA09HxgOoMryEyw_X_SExJ5-ZQ"
+                        alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l7 m6 w3-margin-bottom" style="margin-left : 40px">
+                <div class="w3-display-container">
+                    <h5>Đây là wesite đọc báo do nhóm 4 lớp Công nghệ phần mềm thực hiện.</h5>
+                    <h5> Nhận thấy nhu cầu tìm kiếm thông tin trong xã hội hiện nay, nhóm chúng tôi quyết định thiết kế
+                        phần mềm đọc báo online.
+                        Mục tiêu của chúng tôi là thiết kế là trang web đọc báo đáp ứng nhu cầu tiếp cận thông tin nhanh
+                        chóng, chính xác.
+                        Đối tượng mà chúng tôi hướng đến là toàn bộ mọi người sở hữu thiết bị công nghệ như: máy tính,
+                        điện thoại , ipad.</h5>
+                    <h5>Hiện tại, Website vẫn đang trong quá trình hoàn thiện và phát triển.</h5>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="w3-container w3-padding-32" id="about">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-size: 27px; font-weight: 500; color: #265077">About us</h3>
+                <p>Các thành viên cùng nhau hợp tác phát triển website
+                </p>
+            </div>
+
+            <div class="w3-row-padding ">
+                <div class="w3-col  m6 w3-margin-bottom  about-picture" style="width: 20%">
+                    <img src="./anh/thanhVien/huy.jpg" alt="huy" style="width:90%; height: 200px">
+                    <h4>Bùi Quang Huy</h4>
+                    <p class="w3-opacity">Trưởng nhóm & Kĩ thuật viên</p>
+                    <p>Làm fontend + backend giao diện đọc báo</p>
+                    <div class="w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-large w3-margin-right"></i> <p class="w3-margin-right" style="display: inline; font-size: 15px">ha noi</p><br>
+                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">0979927230</p><br>
+                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">huybui@gmail.com</p><br>
+                    </div>
+
+                </div>
+                <div class="w3-col m6 w3-margin-bottom about-picture" style="width: 20%">
+                    <img src="./anh/thanhVien/an.jpg" alt="an" style="width:90%; height: 200px">
+                    <h4>Nguyễn Thành An</h4>
+                    <p class="w3-opacity">Kĩ thuật viên</p>
+                    <p>
+                        Làm fontend giao diện đọc báo + backend giao diện admin, author
+                    </p>
+                    <div class="w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-large w3-margin-right"></i> <p class="w3-margin-right" style="display: inline; font-size: 15px">ha noi</p><br>
+                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">0979927230</p><br>
+                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">annguyen@gmail.com</p><br>
+                    </div>
+                </div>
+                <div class="w3-col m6 w3-margin-bottom about-picture" style="width: 20%">
+                    <img src="./anh/thanhVien/mai.jpg" alt="mai" style="width:90%; height: 200px">
+                    <h4>Đoàn Thị Mai</h4>
+                    <p class="w3-opacity">Kĩ thuật viên</p>
+                    <p>Làm fontend giao diện admin, author + giao diện đọc báo</p>
+                    <div class="w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-large w3-margin-right"></i> <p class="w3-margin-right" style="display: inline; font-size: 15px">ha noi</p><br>
+                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">0979927230</p><br>
+                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">maidoan@gmail.com</p><br>
+                    </div>
+                </div>
+                <div class="w3-col m6 w3-margin-bottom about-picture" style="width: 20%">
+                    <img src="./anh/thanhVien/trang.jpg" alt="trang" style="width:90%; height: 200px">
+                    <h4>Nguyễn Thu Trang</h4>
+                    <p class="w3-opacity">Kĩ thuật viên</p>
+                    <p>Làm fontend giao diện đọc báo </p>
+                    <div class="w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-large w3-margin-right"></i> <p class="w3-margin-right" style="display: inline; font-size: 15px">ha noi</p><br>
+                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">0979927230</p><br>
+                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">trangnguyen@gmail.com</p><br>
+                    </div>
+                </div>
+                <div class="w3-col m6 w3-margin-bottom about-picture" style="width: 20%">
+                    <img src="./anh/thanhVien/trung.jpg" alt="trung" style="width:90%; height: 200px">
+                    <h4>Đỗ Quang Trung</h4>
+                    <p class="w3-opacity">Kĩ thuật viên</p>
+                    <p>Làm fontend giao diện đọc báo</p>
+                    <div class="w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-large w3-margin-right"></i> <p class="w3-margin-right" style="display: inline; font-size: 15px">ha noi</p><br>
+                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">0979927230</p><br>
+                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-large w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 15px">trungdo@gmail.com</p><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="w3-container w3-padding-32" id="contact">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-size: 27px; font-weight: 500; color: #265077">Contact us</h3>
+                <p>Hãy liên hệ với chúng tôi để được tư vấn và giải đáp thắc mắc.</p>
+                <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><p class="w3-margin-right" style="display: inline; font-size: 18px">Địa chỉ: Trường đại học Công Nghệ, Đại học Quốc Gia Hà Nội</p><br>
+                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 0979 92 72 30<br>
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: maidoan2017@gmail.com<br>
+                      </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
