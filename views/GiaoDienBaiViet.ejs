@@ -11,6 +11,7 @@
     <title>MU - Liverpool</title>
 
 
+
     <style>
         .main:after {
             content: "";
@@ -69,7 +70,6 @@ html{
 /*----------CODE HEADING-----------------------*/
 /*---------------------------------------------*/
 
-/*-----------default -----------------------------*/
 *{
     padding: 0px;
     margin: 0px;
@@ -89,13 +89,8 @@ html{
     background: #78b43d;
     margin: 0 auto;
     top:0px;
-    background-attachment: scroll!important;
+    z-index: 10;
 }
-
-/*.hdr .menu_bar{
-    width: 75%;
-    margin: 0 auto;
-}*/
 
 div{
     display: block;
@@ -119,19 +114,17 @@ div{
     top: 0;
     right: 0;
     width: 815px;
-}
-
-.tpMnRtx ul{
-    border-right: #90c95a solid 1px;
-    
+    height: 50px;
 }
 
 .tpMnRt ul{
+    border-right: #90c95a solid 1px;
+    border-left: #90c95a solid 1px;
+    padding-left: 20px;
     height: 50px;
     line-height: 40px;
     width: 760px;
     float: left;
-    /*margin-left: -140px;*/
 }
 
 ul, li{
@@ -141,7 +134,7 @@ ul, li{
 }
 
 .tpMnRt ul li{
-    padding: 0 3px;
+    /* padding: 0 3px; */
     float: initial;
     cursor: pointer;
     display: inline-block;
@@ -150,18 +143,23 @@ ul, li{
 }
 
 .tpMnRtx ul li{
-    height: 45px;
+    height: 50px;
     padding-top: 5px;
 }
 
 .rlt{
     position: relative;
+    margin: 0 10px;
+}
+
+.rlt:hover, 
+.rlt:active{
+    background-color: #609a26;
 }
 
 .tpMnRtx ul li a:first-child{
     height: 10px;
     display: block;
-
     margin-bottom: 4px;
 }
 
@@ -193,7 +191,7 @@ ul, li{
 .tpMnRt .icoSch {
     float: right;
     position: absolute;
-    border-right: white solid 1px;
+    border-right: #90c95a solid 1px;
     height: 50px;
     padding-right: 8px;
     padding-top: 5px;
@@ -235,10 +233,10 @@ ul, li{
 .icoSch .hsFedBck:hover .frmctrl,
 .icoSch .hsFedBck:active .frmctrl{
     position: relative;
-    width: 780px;
+    width: 770px;
     height: 40px;
     background-color: #fff;
-    right: 780px;
+    right: 770px;
 }
 
 .hsFedBck a {
@@ -387,6 +385,8 @@ a{
     display: none;
 }
 /*REPONSIVE TOP*/
+
+   
 
    
 /*TIN NHÁY NHÁY---------------------------------------------------------------------------------------------*/
@@ -781,7 +781,6 @@ a{
                        </div>
                    </div>
                </div>
-               >
                <!--END MENU LEFT-->
            </div>
        </header>
