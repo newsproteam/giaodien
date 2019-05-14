@@ -10,23 +10,19 @@ app.use(express.static(__dirname + '/views'));
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-    host: "db4free.net",
+   host: "db4free.net",
     user: "thanhan1181999",
     password: "77621176211",
     database: "news_data",
     port: "3306"
 
-});
-/*
-
-var con = mysql.createConnection({
-    host: "localhost",
+   /* host: "localhost",
     user: "root",
     password: "",
-    database: "news",
-    port: "3306"
+    database: "news_data",
+    port: "3307"*/
 });
-*/
+
 con.connect();
 //---------------------------------------------------------
 app.get("/", function(req, res) {
@@ -72,6 +68,8 @@ app.post('/', urlencodedParser, function(req, res) {
             }
         })
     })
+
+    
     //góp ý-------------------------------------------------------
 app.get('/feedback', function(req, res) {
     res.render('feedback');
@@ -89,6 +87,14 @@ app.post('/feedback', urlencodedParser, function(req, res) {
         }
     });
 });
+
+
+// Giao Diện giới thiệu
+app.get('/gioithieu', function(req, res) {
+    res.render('GiaoDienGioiThieu');
+});
+
+
 //trả về kết quả thao tác----
 app.get('/return_result', function(req, res) {
     res.render('return_result');
@@ -134,7 +140,7 @@ app.get('/:type', function(req, res) {
     else
         con.query(sql, function(error, results, fields) {
             if (error) {
-                throw error;
+                console.log(error);
             } else {
                 res.render('GiaoDienChuDe', { results });
             }
@@ -144,7 +150,10 @@ app.get('/:type', function(req, res) {
 app.get('/:type/:id', function(req, res) {
     var x = req.params.id;
     var y = req.params.type;
-    var sql = "select * from " + y + " where id=" + x +
+    if(y=="bongda" ||y=="kinhdoanh"||y=="thitruong"||y=="suckhoe"||y=="hitech"|| 
+    y=="showbiz"||y=="thegioi"||y=="thethao"||y=="phaidep"||y=="amthuc" )
+    {
+        var sql = "select * from " + y + " where id=" + x +
         " union select * from " + y + " where hot='Y'";
 
     con.query(sql, function(error, results, fields) {
@@ -153,6 +162,8 @@ app.get('/:type/:id', function(req, res) {
             res.render('GiaoDienBaiViet', { results });
         }
     });
+    }
+    else res.redirect('/')
 });
 
 app.listen(process.env.PORT || 3000);
