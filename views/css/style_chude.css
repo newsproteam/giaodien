@@ -6,17 +6,19 @@
 }
 
 .zn-container .zn__column--idx-0{
-    width:460px;
-    padding-right: 5px;
+    width: 500px;
+    height: 333px;
+    border-right: 1px solid #e0e0e0;
+    padding-right: 10px;
 }
 
 .zn-container .zn__column--idx-1{
     width:240px;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .zn-container .zn__column--idx-2{
-    width:300px;
+    width:280px;
 }
 
 .title{
@@ -24,15 +26,17 @@
    
 }
 
-p, h1{
+.title p, h1{
     text-transform: uppercase;
     display: inline;
-    color: #404040;
     font-size: 25px;
+    color: #404040;
 }
 
-p{
+.title p{
     border-right: black solid 2px;
+    
+    padding-right: 10px;
 }
 
 
@@ -40,17 +44,23 @@ a{
     text-decoration: none;
 }
 
-.item{
-    padding: 10px 10px;
-}
-
 li{
     list-style-type: none;
 }
 
 /*------------TIN NONG----------------------------*/
+.top{
+    border-bottom: #ddd solid 1px;
+}
+.item{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
 .item .img{
-    height: 350px;
+    height: 333px;
+    position: relative;
 }
 
 .width-100 {
@@ -60,16 +70,24 @@ li{
 }
 
 .inner{
-    margin-top: -150px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    background: url(//cdn.24h.com.vn/images/Rectangle-10.png) no-repeat center bottom;
+    background-size: 100% 100%;
+    padding-top: 50px;
 }
 
-.inner .name a{
+.zn__column--idx-0 .inner .name a{
     display: inline-block;
     font-weight: 600;
     color: #fff;
     transition: .3s; 
     text-decoration: none;
     padding: 10px;
+    font-size: 20px;
 }
 
 .inner .name a:hover,
@@ -83,28 +101,40 @@ li{
     padding: 10px;
 }
 
-.zn__column--idx-1 .item .img{
-    height: 150px;
+.zn__column--idx-1 .item{
+    overflow: hidden;
 }
-.inner1{
-    margin-top: -90px;
+
+.zn__column--idx-1 .item .img{
+    height: 162px;
+}
+.zn__column--idx-1 .inner{
+    bottom: -3px;
+
 }
 #item2{
     margin-top: 5px;
 }
 
-.inner1 .name a{
-    display: inline-block;
-    font-weight: 600;
-    color: #fff;
-    transition: .3s; 
-    padding: 15px;
-    font-size: 13px;
+
+.zn__column--idx-1 .inner .name{
+    height: 51px;
+    overflow: hidden;
     line-height: 17px;
 }
 
-.inner1 .name a:hover,
-.inner1 .name a:active{
+.zn__column--idx-1 .inner .name a{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff!important;
+    transition: .5s;
+    -webkit-transition: .5s;
+    margin-bottom: 0;
+}
+
+.zn__column--idx-1 .inner .name a:hover,
+.zn__column--idx-1 .inner .name a:active{
     font-size: 15px;
 }
 
@@ -114,6 +144,7 @@ li{
     overflow: hidden;
     padding-bottom: 10px;
     border-bottom: #ddd solid 1px;
+    height: 200px;
 }
 
 .l-container .zn__column--idx-2{

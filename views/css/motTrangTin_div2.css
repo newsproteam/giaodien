@@ -1,15 +1,15 @@
-/* .div2{
+ .div2{
     max-width: 280px;
-    background-color:white;
-} */
+    padding-left: 10px;
+} 
 /*TIN NHÁY NHÁY---------------------------------------------------------------------------------------------*/
 .anh_qc_cot2{ 
     width: 100%;
     height:600px;
-    width:300px;
+    max-width:260px;
     background-image:url('../anh/thuongDinh.png');
     background-repeat: no-repeat;
-  
+    padding-left: 10px;
     -webkit-animation:anh_qc 20s infinite;
 }
 @-webkit-keyframes anh_qc {
@@ -27,7 +27,7 @@
     margin-right: 5px;
     margin-top: 0;
     margin-bottom: 7px;
-    width:33.32%;
+    width:30%;
 }
 
 /*đến tin trong 1 khung-showbiz*/
@@ -45,7 +45,7 @@
 .anhtinPhu+div>a{
     text-decoration: none;
     color:black;
-    font-size: 19px;
+    font-size: 17px;
 }
 .anhtinPhu+div>a:hover{
     color:#378b36;

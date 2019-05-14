@@ -54,9 +54,10 @@
             padding-top:60px; 
 }
 
-.row{
-	margin-top:15px;
-}
+        .main .row{
+            margin-top:15px;
+            margin-left: 50px;
+        }
         *{
     padding: 0px;
     margin: 0px;
@@ -66,6 +67,10 @@
 html{
     font-size: 12px;
 }
+
+        .tin_lq .row{
+            margin-left: -5px;
+        }
  
 /*----------CODE HEADING-----------------------*/
 /*---------------------------------------------*/
@@ -470,8 +475,10 @@ a{
     font-size: 25px;
     margin-right: 0;
     padding-right: 10px;
-    padding-left: 10px;
     -webkit-animation: trangchu 5s infinite;
+}
+.bongda{
+    padding-left: 10px;
 }
 @-webkit-keyframes trangchu{
     0%{color: aqua}
@@ -557,6 +564,11 @@ a{
     font-size: 15px;
     text-decoration: none;
 }
+
+.tabCuoi:hover, .tabCuoi:active{
+    color: #7d7d7d;
+}
+
 .chuCuoi{
     width: 998px;
     margin: 0 auto;
@@ -571,6 +583,10 @@ a{
     font-size: 15px;
 
 }
+.chuCuoi p{
+    font-size: 15px!important;
+}
+
 .tlqHeader .tit{
     display: block;
     font-size: 175%;
@@ -622,7 +638,7 @@ a{
     display: block;
     color: #333;
     padding: 0 0 5px;
-    margin: 0;
+    margin: 10px;
 }
 
 .bld{
@@ -813,15 +829,15 @@ a{
                 <h1 id="header1"><%= results[0].name%></h1>
                 <!--ngày tháng năm VÀ chia sẻ mạng xã hội------------------>
                 <div class="thoigianLink">
-                    <div class="thoigian" style="margin-top: 9px;">
+                    <div class="thoigian" style="margin-top: 9px; float: right;">
                         Thứ Hai, ngày 25/02/2019 00:10 AM (GMT+7)
                     </div>
-                    <a href="#" title="Chia sẻ bài viết này trên G+"> <span class="iconMXH"><img src="anh/iconMXHfb.png"
+                    <!-- <a href="#" title="Chia sẻ bài viết này trên G+"> <span class="iconMXH"><img src="anh/iconMXHfb.png"
                                 alt="fb"></span></a>
                     <a href="#" title="CHia sẻ bài viết này trên Facebook"><span class="iconMXH"> <img
                                 src="anh/iconMXH.png" alt="fb"></span></a>
                     <a href="#" title="Chia sẻ trên Fanpage"><span class="iconMXH"> <img src="anh/iconMXHg.png"
-                                alt="g+"></span></a>
+                                alt="g+"></span></a> -->
                     <div style="overflow: auto"></div>
                 </div>
                 <!--tiêu đề con thứ 2-------------------------------------------------------------->
@@ -1110,7 +1126,7 @@ a{
                 <hr style="color:#378b36;">
                 <div class="tinPhu" style="width: 330px;">
                     <div class="anhtinPhu">
-                        <a href="#"><img src="anh/c2_1.jpg" alt="" title="a1"></a>
+                        <a href="#"><img src="Image/c2_1.jpg" alt="" title="a1"></a>
                     </div>
 
                     <div style="float:left;width:60%;">
@@ -1200,9 +1216,9 @@ a{
     <!---phần cuối trang-->
     <div>          
                      
-                      <div style="margin: 0 auto;text-align: center;background: #383535;padding: 5px;">
-                          <a href="#" class="tabCuoi">Giới thiệu</a>|
-                          <a href="#" class="tabCuoi">Góp ý</a>|
+                      <div style="margin: 0 auto;text-align: center;background:#78b43d;padding: 5px;">
+                          <a href="#" class="tabCuoi">Giới thiệu</a>
+                          <a href="#" class="tabCuoi">Góp ý</a>
                           
                         </div>
                       <!------>
