@@ -44,8 +44,7 @@
                                     </div>
 
 
-                                    <a href="/thitruong" class="thi_truong_text_full tit"
-                                        title="Thị trường - Tiêu dùng">thị trường</a>
+                                    <a href="/thitruong" class="thi_truong_text_full tit" title="Thị trường - Tiêu dùng">thị trường</a>
 
                                 </a>
 
@@ -106,10 +105,7 @@
                                 <form style="margin: 0px" name="search_box" id="search_box" target="_blank">
                                     <input type="hidden" value="015713360359124540288:broohx1xloo" name="cx">
                                     <input type="hidden" value="UTF-8" name="ie">
-                                    <input class="frmctrl" id="search" placeholder="Nhập tin tức cần tìm" type="text"
-                                        name="q" spellcheck="false" autocomplete="off" value="Nhập tin tức cần tìm"
-                                        onblur="javascript:if(this.value==''){this.value='Nhập tin tức cần tìm'}"
-                                        onfocus="javascript:if(this.value=='Nhập tin tức cần tìm'){this.value=''}">
+                                    <input class="frmctrl" id="search" placeholder="Nhập tin tức cần tìm" type="text" name="q" spellcheck="false" autocomplete="off" value="Nhập tin tức cần tìm" onblur="javascript:if(this.value==''){this.value='Nhập tin tức cần tìm'}" onfocus="javascript:if(this.value=='Nhập tin tức cần tìm'){this.value=''}">
                                     <a href="/"><span class="icoSearTop"></span></a>
                                 </form>
                             </div>
@@ -123,8 +119,7 @@
                 <div class="contnr">
                     <div class="log">
                         <div class="hmClk logoOld">
-                            <a href="/"><img class="initial loading" alt="img home"
-                                    src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png"></a>
+                            <a href="/"><img class="initial loading" alt="img home" src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png"></a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +137,9 @@
 
             <div class="title">
                 <p style="padding-right: 10px;">trang chủ</p>
-                <h1 style="padding-left: 10px;"><%= results[0].type1%></h1>
+                <h1 style="padding-left: 10px;">
+                    <%= results[0].type1%>
+                </h1>
             </div>
             <div class="flex-container column">
 
@@ -153,21 +150,21 @@
 
                                 <div class="item">
                                     <div class="img">
-                                        <a href="#"
-                                            title="Viettel - Thanh Hóa: Bùi Tiến Dũng tỏa sáng, tiếc cho Messi xứ Thanh">
-                                            <img class="width-100 initial loaded " src="<%= results[0].image1%>" alt="">
+                                        <a href="/<%= results[0].type%>/<%= results[0].id%>" title="<%= results[0].name%>">
+                                            <img class="width-100 initial loaded " src="<%= results[0].image2%>" alt="">
                                         </a>
 
                                     </div>
                                     <div class="inner">
                                         <header>
                                             <h2 class="name cxanh">
-                                                <a href="#"><%= results[0].name%></a>
+                                                <a href="/<%= results[0].type%>/<%= results[0].id%>">
+                                                    <%= results[0].name%>
+                                                </a>
                                             </h2>
                                         </header>
                                         <div class="desc">
-                                            (Vòng 2 V-League 2019) Viettel và Thanh Hóa đã cống hiến một màn đọ sức rất
-                                            hấp dẫn.
+                                            <%= results[0].name1%>
                                         </div>
                                     </div>
                                 </div>
@@ -180,43 +177,43 @@
                         <div class="zn__column--idx-1">
                             <div class="item">
                                 <div class="img">
-                                    <a href="#">
-                                        <img class="width-100"
-                                            src="https://cdn.24h.com.vn/upload/1-2019/images/2019-03-01//thai-1551449003-17-width640height480.jpg"
-                                            alt="">
+                                    <a href="/<%= results[1].type%>/<%= results[1].id%>">
+                                        <img class="width-100" src="<%= results[1].image2%>" alt="">
                                     </a>
                                 </div>
                                 <div class="inner">
                                     <header>
                                         <h2 class="name">
-                                            <a href="#">Xuân Trường đá chính ở Buriram: Suýt gây họa với pha phạm
-                                                lỗi ở
-                                                Thai-League </a>
+                                            <a href="/<%= results[1].type%>/<%= results[1].id%>">
+                                                <%= results[1].name%>
+                                            </a>
                                         </h2>
                                     </header>
                                 </div>
                             </div>
-                           
+
 
                             <div class="item" id="item2">
                                 <div class="img">
-                                    <a href="#">
-                                        <img class="width-100"
-                                            src="https://cdn.24h.com.vn/upload/1-2019/images/2019-03-01//tuananh-1551448127-590-width640height480.jpg"
-                                            alt="">
+                                    <a href="/<%= results[2].type%>/<%= results[2].id%>">
+                                        <img class="width-100" src="<%= results[2].image2%>" alt="">
                                     </a>
                                 </div>
                                 <div class="inner">
                                     <header>
                                         <h2 class="name">
-                                            <a href="#">Quân bầu Đức thua đau TP HCM, Tuấn Anh vẫn đầy bản lĩnh </a>
+                                            <a href="/<%= results[2].type%>/<%= results[2].id%>">
+                                                <%= results[2].name%>
+                                            </a>
                                         </h2>
                                     </header>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
+
+
                     <div class="bottom">
                         <!--START TIN TRONG NUOC-->
                         <div class="l-container">
@@ -251,7 +248,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
+                                        </span>
                                         </span>
                                     </article>
                                 </div>
@@ -282,75 +279,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
                                         </span>
-                                    </article>
-                                </div>
-
-
-
-                            </div>
-
-
-                            <div class="flex-container">
-                                <div class="zn__column--idx-0 column">
-                                    <article class="bxDoiSbIt">
-                                        <header>
-                                            <h2>
-                                                <span class="nwsTit postname">
-                                                    <a href="#">Real tái đấu “Siêu kinh điển”: Benzema bị trộm đồ, fan
-                                                        đòi
-                                                        Mourinho trở...</a>
-                                                </span>
-                                            </h2>
-                                        </header>
-                                        <span class="imgFlt imgNws">
-                                            <a href="#">
-                                                <img class="width-100 initial loaded"
-                                                    src="https://cdn.24h.com.vn/upload/1-2019/images/2019-03-01/medium/1551433608-472-thumbnail.jpg"
-                                                    alt="">
-                                            </a>
-                                        </span>
-                                        <span class="nwsSp descd">
-                                            HLV Jose Mourinho rất có thể sẽ tái xuất dẫn dắt Real – đội bóng từng sa
-                                            thải
-                                            ông.
-                                        </span>
-                                        <span class="nwsTit">
-                                            <span class="updTm dated">
-                                                <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
-                                        </span>
-                                    </article>
-                                </div>
-
-                                <div class="zn__column--idx-1 column">
-                                    <article class="bxDoiSbIt">
-                                        <header>
-                                            <h2>
-                                                <span class="nwsTit postname">
-                                                    <a href="#">Real tái đấu “Siêu kinh điển”: Benzema bị trộm đồ, fan
-                                                        đòi
-                                                        Mourinho trở...</a>
-                                                </span>
-                                            </h2>
-                                        </header>
-                                        <span class="imgFlt imgNws">
-                                            <a href="#">
-                                                <img class="width-100 initial loaded"
-                                                    src="https://cdn.24h.com.vn/upload/1-2019/images/2019-03-01/medium/1551433608-472-thumbnail.jpg"
-                                                    alt="">
-                                            </a>
-                                        </span>
-                                        <span class="nwsSp descd">
-                                            HLV Jose Mourinho rất có thể sẽ tái xuất dẫn dắt Real – đội bóng từng sa
-                                            thải
-                                            ông.
-                                        </span>
-                                        <span class="nwsTit">
-                                            <span class="updTm dated">
-                                                <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
                                         </span>
                                     </article>
                                 </div>
@@ -361,72 +290,6 @@
 
 
 
-                            <div class="flex-container">
-                                <div class="zn__column--idx-0 column">
-                                    <article class="bxDoiSbIt">
-                                        <header>
-                                            <h2>
-                                                <span class="nwsTit postname">
-                                                    <a href="#">Real tái đấu “Siêu kinh điển”: Benzema bị trộm đồ, fan
-                                                        đòi
-                                                        Mourinho trở...</a>
-                                                </span>
-                                            </h2>
-                                        </header>
-                                        <span class="imgFlt imgNws">
-                                            <a href="#">
-                                                <img class="width-100 initial loaded"
-                                                    src="https://cdn.24h.com.vn/upload/1-2019/images/2019-03-01/medium/1551433608-472-thumbnail.jpg"
-                                                    alt="">
-                                            </a>
-                                        </span>
-                                        <span class="nwsSp descd">
-                                            HLV Jose Mourinho rất có thể sẽ tái xuất dẫn dắt Real – đội bóng từng sa
-                                            thải
-                                            ông.
-                                        </span>
-                                        <span class="nwsTit">
-                                            <span class="updTm dated">
-                                                <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
-                                        </span>
-                                    </article>
-                                </div>
-
-                                <div class="zn__column--idx-1 column">
-                                    <article class="bxDoiSbIt">
-                                        <header>
-                                            <h2>
-                                                <span class="nwsTit postname">
-                                                    <a href="#">Real tái đấu “Siêu kinh điển”: Benzema bị trộm đồ, fan
-                                                        đòi
-                                                        Mourinho trở...</a>
-                                                </span>
-                                            </h2>
-                                        </header>
-                                        <span class="imgFlt imgNws">
-                                            <a href="#">
-                                                <img class="width-100 initial loaded"
-                                                    src="https://cdn.24h.com.vn/upload/1-2019/images/2019-03-01/medium/1551433608-472-thumbnail.jpg"
-                                                    alt="">
-                                            </a>
-                                        </span>
-                                        <span class="nwsSp descd">
-                                            HLV Jose Mourinho rất có thể sẽ tái xuất dẫn dắt Real – đội bóng từng sa
-                                            thải
-                                            ông.
-                                        </span>
-                                        <span class="nwsTit">
-                                            <span class="updTm dated">
-                                                <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
-                                        </span>
-                                    </article>
-                                </div>
-
-
-
-                            </div>
                         </div>
                         <!--END TIN TRONG NUOC-->
 
@@ -479,7 +342,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
+                                        </span>
                                         </span>
                                     </article>
                                 </div>
@@ -510,7 +373,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
+                                        </span>
                                         </span>
                                     </article>
                                 </div>
@@ -547,7 +410,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
+                                        </span>
                                         </span>
                                     </article>
                                 </div>
@@ -578,7 +441,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
+                                        </span>
                                         </span>
                                     </article>
                                 </div>
@@ -616,7 +479,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
+                                        </span>
                                         </span>
                                     </article>
                                 </div>
@@ -647,7 +510,7 @@
                                         <span class="nwsTit">
                                             <span class="updTm dated">
                                                 <span class="updTm">02/03/2019 | 00:03</span>
-                                            </span>
+                                        </span>
                                         </span>
                                     </article>
                                 </div>
@@ -666,19 +529,19 @@
                                 display: inline-block;
                                 margin-left: 200px;
                             }
-
+                            
                             .pagination a {
                                 color: black;
                                 float: left;
                                 padding: 8px 16px;
                                 text-decoration: none;
                             }
-
+                            
                             .pagination a.active {
                                 background-color: #4CAF50;
                                 color: white;
                             }
-
+                            
                             .pagination a:hover:not(.active) {
                                 background-color: #ddd;
                             }
@@ -724,8 +587,7 @@
                                             </div>
                                             <div class="img_tin_hot_lquan">
                                                 <a href="#">
-                                                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/190504200214-21-kentucky-derby-2019-exlarge-169.jpg"
-                                                        width="100%" height="200px">
+                                                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/190504200214-21-kentucky-derby-2019-exlarge-169.jpg" width="100%" height="200px">
                                                 </a>
                                             </div>
 
@@ -793,8 +655,7 @@
                                             </div>
                                             <div class="img_tin_hot_lquan">
                                                 <a href="#">
-                                                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/190504200214-21-kentucky-derby-2019-exlarge-169.jpg"
-                                                        width="100%" height="200px">
+                                                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/190504200214-21-kentucky-derby-2019-exlarge-169.jpg" width="100%" height="200px">
                                                 </a>
                                             </div>
 
@@ -867,11 +728,11 @@
                         <h2 style="color:#378b36;margin:30px 0px 10px 5px;">Tin Tức Thị Trường</h2>
                         <hr style="color:#378b36;">
                         <div class="tinPhu" style="width: 280px;">
-                            <div class="anhtinPhu" >
+                            <div class="anhtinPhu">
                                 <a href="#"><img src="Image/c2_1.jpg" alt="" title="a1"></a>
                             </div>
 
-                            <div style="float:left; margin-left: 23px" >
+                            <div style="float:left; margin-left: 23px">
                                 <a href="#">Cha mẹ sành điệu có biết cách chọn sữa tươi chuẩn cho con?</a>
                             </div>
                         </div>
@@ -932,23 +793,23 @@
     <!---phần cuối trang-->
     <div>
 
-            <div style="margin: 0 auto;text-align: center;background: #78b43d;padding: 5px;">
-                <a href="/gioithieu" class="tabCuoi">Giới thiệu</a>
-                <a href="/feedback" class="tabCuoi">Góp ý</a>
-
-            </div>
-            <!------>
-            <div class="chuCuoi">
-                <p>© 2017 Trường Đại học Công nghệ, Đại học Quốc Gia Hà Nội </p>
-
-                <p> Địa chỉ: E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội </p>
-                <p> Điện thoại: 024.37547.461; Fax: 024.37547.460; Email: uet@vnu.edu.vn
-                </p>
-            </div>
-            <!----->
+        <div style="margin: 0 auto;text-align: center;background: #78b43d;padding: 5px;">
+            <a href="/gioithieu" class="tabCuoi">Giới thiệu</a>
+            <a href="/feedback" class="tabCuoi">Góp ý</a>
 
         </div>
-        <!--hết phần cuối trang-->
+        <!------>
+        <div class="chuCuoi">
+            <p>© 2017 Trường Đại học Công nghệ, Đại học Quốc Gia Hà Nội </p>
+
+            <p> Địa chỉ: E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội </p>
+            <p> Điện thoại: 024.37547.461; Fax: 024.37547.460; Email: uet@vnu.edu.vn
+            </p>
+        </div>
+        <!----->
+
+    </div>
+    <!--hết phần cuối trang-->
 
 </body>
 

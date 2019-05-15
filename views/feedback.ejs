@@ -68,7 +68,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Góp ý, liên hệ với chúng tôi</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -76,10 +76,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-    input, button{
+    input,
+    button {
         margin: 10px;
     }
 </style>
+
 <body>
 
     <!-- Navbar (sit on top) -->
@@ -93,14 +95,14 @@
 
         <div class="w3-col m6 w3-display-middle w3-center" style="margin-top:30px; max-width: 500px;">
             <h2>Góp ý - Liên hệ với chúng tôi</h2>
-            <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-border" type="text" placeholder="Họ và tên" required name="">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="">
-                <input class="w3-input w3-border" type="text" placeholder="Số điện thoại" required name="">
-                <textarea class="w3-input w3-border" type="text" placeholder="Nội dung" required name="" rows="5" style="margin-left: 10px"></textarea>
-                
-                <button class="w3-button w3-black w3-section w3-right" type="submit">Send</button>
-                <button class="w3-button w3-black w3-section w3-right" type="submit">Cancel</button>
+            <form action="" method="POST">
+                <input class="w3-input w3-border" type="text" placeholder="Họ và tên" name="name" autocomplete="off">
+                <input class="w3-input w3-border" type="text" placeholder="Email" name="address" autocomplete="off">
+                <input class="w3-input w3-border" type="text" placeholder="Số điện thoại" name="phone" autocomplete="off">
+                <textarea class="w3-input w3-border" type="text" placeholder="Nội dung" name="feedback" rows="5" style="margin-left: 10px" autocomplete="off"></textarea>
+
+                <button class="w3-button w3-black w3-section " type="submit" style="margin: 0 auto">Send</button>
+
             </form>
         </div>
 
