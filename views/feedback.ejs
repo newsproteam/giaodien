@@ -1,66 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tra Cứu</title>
-    <style>
-        th,
-        td {
-            padding: 10px;
-        }
-        
-        thead {
-            color: red;
-            background-color: rgb(123, 123, 216);
-        }
-        
-        tr {
-            background-color: antiquewhite;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-    </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
+<!DOCTYPE html>
+<html>
+<title>Góp ý, liên hệ với chúng tôi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    input,
+    button {
+        margin: 10px;
+    }
+</style>
 
 <body>
-    <a href="/">trang chủ</a>
-    <div style="font-size: 50px;text-align: center;color: green;margin: 20px auto">góp ý </div>
-    <section>
-        <form action="" method="post">
-            <table style="margin: 20px auto;width: 60%;text-align: center">
-                <tbody>
-                    <tr>
-                        <td style="width: 40%">name</td>
-                        <td><input name="name" style="width: 80%"></td>
-                    </tr>
-                    <tr>
-                        <td style="width: 40%">address</td>
-                        <td><input name="address" style="width: 80%"></td>
-                    </tr>
 
-                    <tr>
-                        <td style="width: 40%">feedback</td>
-                        <td><textarea style="width: 80%;" name="feedback" rows="5" type="text" name="" id="nhan_xet" value="feedback....."></textarea></td>
-                    </tr>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="/" class="w3-bar-item w3-button"><b>News Online</b></a>
+        </div>
+    </div>
 
-                    <tr>
-                        <td colspan="2"><input type="submit" name="submit" value="gửi" style="padding:20px 50px;background-color:black;color: white;"></td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="w3-content w3-padding" style="max-width:1564px">
 
+        <div class="w3-col m6 w3-display-middle w3-center" style="margin-top:30px; max-width: 500px;">
+            <h2>Góp ý - Liên hệ với chúng tôi</h2>
+            <form action="" method="POST">
+                <input class="w3-input w3-border" type="text" placeholder="Họ và tên" name="name" autocomplete="off">
+                <input class="w3-input w3-border" type="text" placeholder="Email" name="address" autocomplete="off">
+                <input class="w3-input w3-border" type="text" placeholder="Số điện thoại" name="phone" autocomplete="off">
+                <textarea class="w3-input w3-border" type="text" placeholder="Nội dung" name="feedback" rows="5" style="margin-left: 10px" autocomplete="off"></textarea>
 
-        </form>
-    </section>
+                <button class="w3-button w3-black w3-section " type="submit" style="margin: 0 auto">Send</button>
+
+            </form>
+        </div>
+
+    </div>
+
 
 </body>
 
