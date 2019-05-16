@@ -173,3 +173,7 @@
 .zn-container-next{
   margin-top: 50px;
 }
+
+.cd_headline-text:hover{
+  color: #c00;
+}

@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>NEWS Online</title>
-    <link rel="icon" href="https://cdn.24h.com.vn/upload/icon/icon_24h.ico">
+    <title>News Online</title>
+    <link rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/office-125/1000/news-512.png"/>
     <link rel="stylesheet" href="../CSS/home_top.css">
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="../CSS/MotTrangTin_div1.css">
@@ -86,10 +86,11 @@
                                 </li>
                                 <!--the gioi-->
                                 <li class="rlt">
+                    
                                     <a href="/thegioi" title="Thế giới">
-                                        <img class="initial loading" src="../Image/the_gioi.png" alt="">
+                                        <img class="initial loading" src="../Image/giai_tri.png" alt="">
                                     </a>
-                                    <a href="/thegioi" class="tit">Thế giới</a>
+                                    <a href="/thegioi" class="tit">Giải Trí</a>
                                 </li>
 
                                 <!--phia dep-->
@@ -111,9 +112,9 @@
                             <!--search-->
                             <div class="icoSch">
                                 <div class="frmGrp hsFedBck" id="icon_search">
-                                    <form style="margin: 0px" name="search_box" id="search_box" target="_blank" action="/" method="post">
-                                        <input class="frmctrl" id="search" placeholder="Nhập tin tức cần tìm" spellcheck="false" autocomplete="off" type="text" name="word">
-                                        <button type="submit" style="border-radius: 10px;background-color:#90c95a;height: 40px;width: 40px"><span class="icoSearTop"></span></button>
+                                    <form style="margin: 0px; height: 40px" name="search_box" id="search_box" target="_blank" action="/" method="post">
+                                        <input  class="frmctrl" id="search" placeholder="Nhập tin tức cần tìm" spellcheck="false" autocomplete="off" type="text" name="word">
+                                        <button type="submit" ><span class="icoSearTop"></span></button>
                                     </form>
                                 </div>
                             </div>
@@ -122,12 +123,11 @@
                     <!--END MENU RIGHT-->
 
                     <!--START MENU LEFT-->
-                    <!--24h-->
+                    <!--Logo-->
                     <div class="contnr">
                         <div class="log">
                             <div class="hmClk logoOld">
-                                <a href="/"><img class="initial loading" alt="img home"
-                                        src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png"></a>
+                                <a href="/">News Online</a>
                             </div>
                         </div>
                     </div>
@@ -718,7 +718,7 @@
 
 
 
-                    </div>>
+                    </div>
 
 
                 </div>
@@ -728,122 +728,119 @@
         </div>
 
 
-        <!--SLIDE-->
+      <!--SLIDE-->
 
-        <div class="slide_hot_week">
-            <div class="main-content">
-                <div class="text_hot_week">
-                    Tin hot trong tuần
-                </div>
-                <div class="owl-carousel ">
-                    <div class="item">
-                        <div class="inner">
-                            <div class="figure">
+      <div class="slide_hot_week">
+        <div class="main-content">
+            <div class="text_hot_week">
+                Tin hot trong tuần
+            </div>
+            <div class="owl-carousel ">
+                <div class="item">
+                    <div class="inner">
+                        <div class="figure">
+                            <a href="/<%= results[47].type%>/<%= results[47].id%>">
+                                <img src=" <%=results[47].image1%>  " alt="Picture 1" height="180">
+                            </a>
+                        </div>
+
+
+                        <div class="padding">
+                            <div class="detail">
+                                <div class="time"></div>
+                                <div class="category"><a
+                                        href="/<%= results[47].type%>"> <%=results[47].type1%></a></div>
+                            </div>
+                            <h2>
                                 <a href="/<%= results[47].type%>/<%= results[47].id%>">
-                                    <img src=" <%=results[47].image1%>  " alt="Picture 1" height="180">
+                                    <%=results[47].name%>
                                 </a>
-                            </div>
-
-
-                            <div class="padding">
-                                <div class="detail">
-                                    <div class="time">December 11, 2016</div>
-                                    <div class="category"><a
-                                            href="/<%= results[47].type%>/<%= results[47].id%>">Travel</a></div>
-                                </div>
-                                <h2>
-                                    <a href="/<%= results[47].type%>/<%= results[47].id%>">
-                                        <%=results[47].time%>
-                                    </a>
-                                </h2>
-                                <p> <%=results[47].contentSummary%></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="inner">
-                            <div class="figure">
-                                <a href="/<%= results[49].type%>/<%= results[49].id%>">
-                                    <img src="<%=results[49].image1%>" alt="Picture 2" height="180">
-                                </a>
-                            </div>
-
-
-                            <div class="padding">
-                                <div class="detail">
-                                    <div class="time">December 11, 2016</div>
-                                    <div class="category"><a href="#">Travel</a></div>
-                                </div>
-                                <h2>
-                                    <a href="/<%= results[49].type%>/<%= results[49].id%>">
-                                        <%=results[49].name%>
-                                    </a>
-                                </h2>
-                                <p><%=results[49].contentSummary%></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="inner">
-                            <div class="figure">
-                                <a href="/<%= results[29].type%>/<%= results[29].id%>">
-                                    <img src="<%=results[29].image1%>" alt="Picture 3" height="180">
-                                </a>
-                            </div>
-
-
-                            <div class="padding">
-                                <div class="detail">
-                                    <div class="time">December 11, 2016</div>
-                                    <div class="category"><a href="#">Travel</a></div>
-                                </div>
-                                <h2>
-                                    <a href="/<%= results[29].type%>/<%= results[29].id%>">
-                                        <%=results[29].name%>
-                                    </a>
-                                </h2>
-                                <p><%=results[29].contentSummary%></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="inner">
-                            <div class="figure">
-                                <a href="/<%= results[22].type%>/<%= results[22].id%>">
-                                    <img src="<%=results[22].image1%>" alt="Picture 4" height="180">
-                                </a>
-                            </div>
-
-
-                            <div class="padding">
-                                <div class="detail">
-                                    <div class="time">December 11, 2016</div>
-                                    <div class="category"><a href="#">Travel</a></div>
-                                </div>
-                                <h2>
-                                    <a href="/<%= results[22].type%>/<%= results[22].id%>">
-                                        <%=results[22].name%>
-                                    </a>
-                                </h2>
-                                <p><%=results[22].contentSummary%></p>
-                            </div>
+                            </h2>
+                            <p> <%= results[47].content1.substring(0,100)%></p>
                         </div>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="inner">
+                        <div class="figure">
+                            <a href="/<%= results[49].type%>/<%= results[49].id%>">
+                                <img src="<%=results[49].image1%>" alt="Picture 2" height="180">
+                            </a>
+                        </div>
 
+
+                        <div class="padding">
+                            <div class="detail">
+                                <div class="time"></div>
+                                <div class="category"><a href="/<%= results[49].type%>"><%=results[49].type1%></a></div>
+                            </div>
+                            <h2>
+                                <a href="/<%= results[49].type%>/<%= results[49].id%>">
+                                    <%=results[49].name%>
+                                </a>
+                            </h2>
+                            <p><%= results[49].content1.substring(0,100)%></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inner">
+                        <div class="figure">
+                            <a href="/<%= results[29].type%>/<%= results[29].id%>">
+                                <img src="<%=results[29].image1%>" alt="Picture 3" height="180">
+                            </a>
+                        </div>
+
+
+                        <div class="padding">
+                            <div class="detail">
+                                <div class="time"></div>
+                                <div class="category"><a href="/<%= results[29].type%>"><%=results[29].type1%></a></div>
+                            </div>
+                            <h2>
+                                <a href="/<%= results[29].type%>/<%= results[29].id%>">
+                                    <%=results[29].name%>
+                                </a>
+                            </h2>
+                            <p><%= results[29].content1.substring(0,85)%></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="inner">
+                        <div class="figure">
+                            <a href="/<%= results[22].type%>/<%= results[22].id%>">
+                                <img src="<%=results[22].image1%>" alt="Picture 4" height="180">
+                            </a>
+                        </div>
+
+
+                        <div class="padding">
+                            <div class="detail">
+                                <div class="time"></div>
+                                <div class="category"><a href="/<%= results[22].type%>"><%=results[22].type1%></a></div>
+                            </div>
+                            <h2>
+                                <a href="/<%= results[22].type%>/<%= results[22].id%>">
+                                    <%=results[22].name%>
+                                </a>
+                            </h2>
+                            <p><%= results[22].content1.substring(0,100)%></p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
+    </div>
 
 
 
-
-
-        <!--END-SLIDE-->
-
+    <!--END-SLIDE-->
         <!---phần cuối trang-->
         <div>
 
-            <div style="margin: 0 auto;text-align: center;background:#78b43d;padding: 5px;">
+            <div class="thanh_cuoi">
                 <a href="/gioithieu" class="tabCuoi">Giới thiệu</a>
                 <a href="/feedback" class="tabCuoi">Góp ý</a>
 

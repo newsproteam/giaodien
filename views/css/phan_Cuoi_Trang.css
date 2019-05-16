@@ -8,7 +8,7 @@
 }
 
 .tabCuoi:hover, .tabCuoi:active{
-    color: #7d7d7d;
+    color: #ada9a9;
 }
 .chuCuoi{
     width: 998px;
@@ -20,13 +20,16 @@
     margin-bottom: 10px;
 }
 .tintuc center{
-    color: blue;
     font-size: 15px;
 
 }
 
 .chuCuoi p{
     font-size: 15px!important;
+}
+
+.thanh_cuoi{
+    margin: 0 auto;text-align: center;background:#404040;padding: 5px;
 }
 /*
 <!---phần cuối-->
