@@ -101,7 +101,7 @@
             width: 100%;
             position: fixed;
             height: 50px;
-            background: #78b43d;
+            background: #404040;
             margin: 0 auto;
             top: 0px;
             z-index: 10;
@@ -131,8 +131,8 @@
         }
         
         .tpMnRt ul {
-            border-right: #90c95a solid 1px;
-            border-left: #90c95a solid 1px;
+            border-right: black solid 1px;
+            border-left: black solid 1px;
             padding-left: 20px;
             height: 50px;
             line-height: 40px;
@@ -168,7 +168,7 @@
         
         .rlt:hover,
         .rlt:active {
-            background-color: #609a26;
+            background-color: black;
         }
         
         .tpMnRtx ul li a:first-child {
@@ -204,7 +204,7 @@
         .tpMnRt .icoSch {
             float: right;
             position: absolute;
-            border-right: #90c95a solid 1px;
+            border-right: black solid 1px;
             height: 50px;
             padding-right: 8px;
             padding-top: 5px;
@@ -221,6 +221,15 @@
         .icoSch form {
             margin-top: -1px!important;
         }
+
+        .icoSch form button{
+        border-radius: 10px;
+        background-color:#404040;
+        height: 40px;
+        width: 40px; 
+        margin-top: -40px;
+        margin-left: -6px;
+    }
         
         .icoSch .hsFedBck input[placeholder] {
             opacity: 0;
@@ -232,7 +241,7 @@
             box-shadow: none;
             display: block;
             width: 150%;
-            height: 30px;
+            height: 20px;
             font-size: 14px;
             color: #555;
         }
@@ -294,8 +303,8 @@
             width: 80px;
             /*70px*/
             float: left;
-            border-left: #90c95a solid 1px;
-            border-right: #90c95a solid 1px;
+            border-left: black solid 1px;
+            border-right: black solid 1px;
             height: 50px;
             padding: 12px 0 0 10px;
         }
@@ -501,20 +510,23 @@
         /*------------------------------*/
         
         .trangchu,
-        .bongda {
+        .chude {
             text-decoration: none;
-            color: #378b36;
+            color: black;
             font-size: 25px;
             margin-right: 0;
             padding-right: 10px;
             -webkit-animation: trangchu 5s infinite;
         }
-        
-        .bongda {
-            padding-left: 10px;
+
+        .chude{
+            text-transform: uppercase;
+            margin-left: 10px;
+
         }
         
-        @-webkit-keyframes trangchu {
+        
+        /* @-webkit-keyframes trangchu {
             0% {
                 color: aqua
             }
@@ -527,7 +539,7 @@
             75% {
                 color: rgb(225, 240, 14)
             }
-        }
+        } */
         
         #list_phia_duoi_phan_tin>ul {
             list-style: none!important;
@@ -645,8 +657,8 @@
             display: block;
             font-size: 175%;
             text-transform: uppercase;
-            color: #78b43d;
-            border-bottom: 2px solid #78b43d;
+            color: black;
+            border-bottom: 2px solid black;
             line-height: 30px;
             margin-top: 30px;
             font-weight: 600;
@@ -695,10 +707,11 @@
             padding: 0 0 5px;
             margin: 10px;
         }
+
         
         .bld {
             font-size: 140%;
-            height: 70px;
+            height: 90px;
             display: block;
             overflow: hidden;
             line-height: 1.2;
@@ -710,7 +723,7 @@
         
         .bld:hover,
         .bld:active {
-            color: #78b43d;
+            color: #c40;
         }
     </style>
 
@@ -810,7 +823,7 @@
                             <div class="frmGrp hsFedBck" id="icon_search">
                                 <form style="margin: 0px" name="search_box" id="search_box" target="_blank" action="/" method="post">
                                     <input class="frmctrl" id="search" placeholder="Nhập tin tức cần tìm" spellcheck="false" autocomplete="off" type="text" name="word">
-                                    <button type="submit" style="border-radius: 10px;background-color:#90c95a;height: 40px;width: 40px"><span class="icoSearTop"></span></button>
+                                    <button type="submit" style="border-radius: 10px;background-color:#404040;height: 40px;width: 40px"><span class="icoSearTop"></span></button>
                                 </form>
                             </div>
                         </div>
@@ -842,17 +855,7 @@
                 <!--các link điều hướng TRANG CHỦ, BÓNG ĐÁ-->
                 <nav>
                     <a class="trangchu" href="/" style="border-right:1px solid black;">TRANG CHỦ</a>
-                    <a class="bongda" href="/<%=results[0].type%>"> <b> <%= results[0].type1%></b> </a><br><br>
-                    <!-- <div id="list_phia_duoi_phan_tin">
-                                 <ul>
-                                    <li>Lịch thi đấu</li>
-                                    <li>Sự kiện-Bình luận</li>
-                                    <li>Video</li>
-                                    <li>Livesocer</li>
-                                    <li>Ảnh bóng đá-người đẹp</li>
-                                    <li>Lịch thi đấu hôm nay</li>
-                                </ul>
-                            </div> -->
+                    <a class="chude" href="/<%=results[0].type%>"> <b> <%= results[0].type1%></b> </a><br><br>
                 </nav>
                 <!--tên chính của tin------------------------------------>
                 <!--sao lại là result[0]-->
@@ -865,13 +868,7 @@
                         <%= results[0].time%>
                     </div>
                     <br>
-                    <!--<a href="/" title="Chia sẻ bài viết này trên G+"> <span class="iconMXH"><img src="anh/iconMXHfb.png"
-                                alt="fb"></span></a>
-                    <a href="#" title="CHia sẻ bài viết này trên Facebook"><span class="iconMXH"> <img
-                                src="anh/iconMXH.png" alt="fb"></span></a>
-                    <a href="#" title="Chia sẻ trên Fanpage"><span class="iconMXH"> <img src="anh/iconMXHg.png"
-                                alt="g+"></span></a>
-                    -->
+                   
                     <div style="float:right;z-index: 0;" class="fb-share-button" data-href="https://news-hot.herokuapp.com/<%= results[0].type%>/<%= results[0].id%>" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxem.vn%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
                     <div style="overflow: auto"></div>
                 </div>
@@ -880,14 +877,7 @@
                     <span style="font-size:1.3em;font-weight: 700 ">
                         <%= results[0].name1%> </span>
                 </div>
-                <!--Một vài link sự kiện------------------------------------------------------------------>
-                <!-- <div>
-                            sự kiện:
-                            <a href="#" title="Premier League 2018-2019">Premier League 2018-2019</a>,
-                            <a href="#" title="Manchester United"> Manchester United</a>,
-                            <a href="#" title="MU - Liverpool: Rực lửa">MU - Liverpool: Rực lửa</a>
-                        </div> -->
-                <!--video được thay bằng ảnh------------------------------------------------------------>
+                
 
 
 
@@ -1010,18 +1000,18 @@
                 </div>
             </a>
 
-            <h3 style="color:#378b36;margin:10px 0px 10px 5px;">Tin Tức Thị Trường</h3>
-            <hr style="color:#378b36;">
+            <h3 style="color:black;margin:20px 0px 10px 5px;; font-size: 20px">Tin Tức Thị Trường</h3>
+            <hr style="color:black;">
 
             <% for(var i = 1 ; i <=6 ; i++){
                 %>
 
-                <div class="tinPhu" style="width: 330px;">
-                    <div class="anhtinPhu" style="float:left;width:35%;">
-                        <a href="/<%= results[i].type%>/<%= results[i].id%>"><img width="115" height="120"src="<%= results[i].image2%>" alt="" title="a1" width="200" height="150"></a>
+                <div class="tinPhu" style="width: 330px; height: 110px; margin-bottom: 10px">
+                    <div class="anhtinPhu" style="float:left;width:35%; height: 110px;">
+                        <a href="/<%= results[i].type%>/<%= results[i].id%>"><img width="115" height="110"src="<%= results[i].image2%>" alt="" title="a1" width="200" height="150"></a>
                     </div>
 
-                    <div style="float:left;width:60%;padding-top:20px;padding-left: 15px;">
+                    <div style="float:left;width:60%;padding-top:10px;padding-left: 10px;">
                         <a href="/<%= results[i].type%>/<%= results[i].id%>">
                             <%= results[i].name%>
                         </a>
@@ -1051,7 +1041,7 @@
     <!---phần cuối trang-->
     <div>
 
-        <div style="margin: 0 auto;text-align: center;background:#78b43d;padding: 5px;">
+        <div style="margin: 0 auto;text-align: center;background:#404040;padding: 5px;">
             <a href="/gioithieu" class="tabCuoi">Giới thiệu</a>
             <a href="/feedback" class="tabCuoi">Góp ý</a>
 

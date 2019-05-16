@@ -16,8 +16,8 @@
 }
 .content_lquan .title_lquan a{
     font-weight: 600;
-    color: #78b43d;
-    font-size:17px;
+    color: black;
+    font-size:20px;
 }
 .content_lquan .tin_hot_text_lquan span{
     font-size: 23px;
@@ -34,7 +34,7 @@
 }
 .content_lquan .title_lquan{
     height: 24px;
-    border-bottom: 2px solid #78b43d;
+    border-bottom: 2px solid black;
     text-transform: uppercase;
     padding-left: 5px;
 }
