@@ -198,10 +198,11 @@ ul, li{
 
 .log{
     float: left;
-    width: 90px;
+    width: 180px;
     height: 50px;
     overflow: hidden;
     position: relative;
+    margin-top: 3px;
 }
 
 .logoOld {
@@ -216,6 +217,13 @@ ul, li{
 
 .hmClk img{
     border: 0;
+}
+
+.contnr .log a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
 }
 
 /*------------------------Danh muc------------*/
