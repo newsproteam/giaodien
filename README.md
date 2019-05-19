@@ -1,6 +1,6 @@
 # Giao diện News Online
 
-Trên đây là source của phần mềm NewsOnline, để sử dụng vui lòng download hoặc clone từ github về.
+Trên đây là source đọc báo của phần mềm NewsOnline, để sử dụng vui lòng download hoặc clone từ github về.
 
 Sau khi tải về mở lên ta sẽ thấy những file sau
 ![image](https://user-images.githubusercontent.com/38287573/57872585-338daa00-7836-11e9-9671-6dd0099fb758.png)

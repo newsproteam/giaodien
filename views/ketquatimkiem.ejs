@@ -2,50 +2,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TRANG CHỦ</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="JS/script.js"></script>
-    <script src="JS/jquery.superslides.min.js"></script>
-    <link rel="stylesheet" href="css/thanhTopStyle.css">
-    <link rel="stylesheet" href="css/styleTrangchu.css">
+    <title>Tìm kiếm </title>
+    <link rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/office-125/1000/news-512.png"/>
+    <link rel="stylesheet" href="/css/home_top.css">
+
 </head>
-<a href="/">trang chủ</a>
 
-<section class="wthree-row py-5" style="background-color:greenyellow">
-    <div class="container py-xl-5 py-lg-3">
-        <ul class="demo row list-unstyled">
-            <% 
-                pos.forEach(function(rows){
-                %>
-                <li class="col-lg-6 col-md-6">
-                    <div class="creatives-grid">
+        <!--THANH TOP-->
+        <div id="zn-top">
+            <!--START HEADING-->
+            <header class="hdr" id="headerd">
+                <div class="menu_bar">
+                    <!--START MENU RIGHT-->
+                    <div class="contnr" id="contnr_right">
+                        <div class="tpMnRt tpMnRtx">
+                            <ul>
+                                <!--bong da-->
+                                <li class="rlt">
+                                    <a href="/bongda" title="Bóng đá">
+                                        <img class="initial loading" src="../Image/bong_da.png"
+                                            alt="Khong the hien thi">
+                                    </a>
+                                    <a href="/bongda" class="tit" title="Bóng đá">Bóng đá</a>
+                                </li>
 
-                        <a href="/<%=rows.type%>/<%=rows.id%>">
-                            <!----->
-                            <img src="<%=rows.image2%>" alt=" " class="img-fluid">
-                        </a>
+                                <!--kinh doanh-->
+                                <li class="rlt">
+                                    <a href="/kinhdoanh" title="Kinh doanh">
+                                        <img src="../Image/kinh_doanh.png" class="initial loading" alt="">
+                                    </a>
+                                    <a href="/kinhdoanh" class="tit" title="Kinh doanh">Kinh doanh</a>
+                                </li>
+                                <!--thi truong-->
+                                <li class="rlt">
+                                    <a href="/thitruong" title="Thị trường - Tiêu dùng">
+                                        <div class="thi_truong_icon_full">
+                                            <img class="initial loading" src="../Image/thi_truong.png" alt="">
+                                        </div>
 
-                        <div class="p-mask img-thumbnail">
 
-                            <h4>
-                                <a href="/<%=rows.type%>/<%=rows.id%>">
-                                    <%=rows.name%>
-                                </a>
-                            </h4>
+                                        <a href="/thitruong" class="thi_truong_text_full tit"
+                                            title="Thị trường - Tiêu dùng">thị trường</a>
 
-                            <span class="let mt-3"><%=rows.time%></span>
+                                    </a>
 
+                                </li>
+                                <!--Suc khoe-->
+                                <li class="rlt">
+                                    <div class="suckhoe_icon">
+                                        <a href="/suckhoe" title="Sức khỏe - Đời sống">
+
+                                            <img class="initial loading" src="../Image/suc_khoe.png" alt="">
+
+
+                                        </a>
+                                        <a href="/suckhoe" class="tit" title="Sức khỏe - Đời sống">Sức khỏe</a>
+                                    </div>
+                                </li>
+                                <!--Hi-tech-->
+                                <li class="rlt">
+                                    <a href="/hitech" title="Thời trang Hi-tech">
+                                        <img class="initial loading" src="../Image/hi_tech.png" alt="">
+                                    </a>
+                                    <a href="/hitech" class="tit" title="Thời trang Hi-tech">Hi-tech</a>
+                                </li>
+                                <!--Đời sống showbiz-->
+                                <li class="rlt">
+                                    <a href="/showbiz" title="Đời sống showbiz">
+                                        <img class="initial loading" src="../Image/showbiz.png" alt="">
+                                    </a>
+                                    <a href="/showbiz" class="tit" title="Đời sống showbiz"> Showbiz</a>
+                                </li>
+                                <!--the gioi-->
+                                <li class="rlt">
+                    
+                                    <a href="/thegioi" title="Thế giới">
+                                        <img class="initial loading" src="../Image/giai_tri.png" alt="">
+                                    </a>
+                                    <a href="/thegioi" class="tit">Giải Trí</a>
+                                </li>
+
+                                <!--phia dep-->
+                                <li class="rlt">
+                                    <a href="/phaidep" title="Phái đẹp">
+                                        <img class="initial loading" src="../Image/phai_dep.png" alt="">
+                                    </a>
+                                    <a href="/phaidep" class="tit" title="Phái đẹp">Phái đẹp</a>
+                                </li>
+                                <!--am thuc-->
+                                <li class="rlt">
+                                    <a href="/amthuc" title="Ẩm thực">
+                                        <img class="initial loading" src="../Image/am_thuc.png" alt="">
+                                    </a>
+                                    <a href="/amthuc" class="tit" title="Ẩm thực">Ẩm thực</a>
+                                </li>
+
+                            </ul>
+                            <!--search-->
+                            <div class="icoSch">
+                                <div class="frmGrp hsFedBck" id="icon_search">
+                                    <form style="margin: 0px; height: 40px" name="search_box" id="search_box" target="_blank" action="/" method="post">
+                                        <input  class="frmctrl" id="search" placeholder="Nhập tin tức cần tìm" spellcheck="false" autocomplete="off" type="text" name="word">
+                                        <button type="submit" ><span class="icoSearTop"></span></button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <%
-                }) 
+                    <!--END MENU RIGHT-->
+
+                    <!--START MENU LEFT-->
+                    <!--Logo-->
+                    <div class="contnr">
+                        <div class="log">
+                            <div class="hmClk logoOld">
+                                <a href="/">News Online</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END MENU LEFT-->
+                </div>
+            </header>
+        </div>
+        <!--HET THANH TOP-->
+
+        <style>
+            .contain_box_news{
+                
+                display: flex;
+                justify-content: center;
+                flex-direction: column-reverse;
+                margin-top: 80px;
+                margin-left: 95px;
+            }
+            .box_news{
+                width:600px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+            .box_news .name_box_news{
+                font-size: 2em;
+                font-weight: bold;
+                padding-top: 10px;
+                padding-left: 5px;
+                
+            }
+            .box_news .name_box_news a:hover{
+                color: #c00;
+            }
+            .box_news .name_box_news a{
+                color: #333;
+            }
+            .box_news .subcontent_news{
+                
+                  font-size: 15px;
+                   margin-top: 2px;
+                 padding-left: 2px;
+                 padding-bottom: 6px;
+            }
+            .name_sub_news{
+                border-left: 2px solid #f2f2f2; 
+                border-right: 2px solid #f2f2f2; 
+                border-bottom: 2px  solid rgba(0,0,0,.15)!important; 
+
+            }
+            
+        </style>
+    <!-- DANH SÁCH TÌM KIẾM -->
+      <div class="contain_box_news">
+            <% 
+            pos.forEach(function(rows){
             %>
-        </ul>
-    </div>
-</section>
+                <div class="box_news">
+                        <div class="image_box_news">
+                                <a href="/<%=rows.type%>/<%=rows.id%>">         
+                                        <img src="<%=rows.image2%>" width="100%" >  
+                                    </a>
+                        </div>
+                        
+                    <div class="name_sub_news">
+                        <div class="name_box_news">
+                            <a href="/<%=rows.type%>/<%=rows.id%>">
+                                    <div class="name_news_text"> <%=rows.name%></div>
+                            </a>
+                        </div>
+                        <div class="subcontent_news">
+                                <%= 
+                                  rows.content1.substring(0,200)
+                                %>
+                               
+                        </div>
+                    </div>
+                        
+                </div>
+       
+            <%
+              }) 
+            %>
+        </div>
+ <!--END DANH SÁCH TÌM KIẾM -->
+   
+     

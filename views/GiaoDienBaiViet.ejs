@@ -3,23 +3,20 @@
 <html>
 
 <head>
-<<<<<<< HEAD
 
      <title><%= results[0].name%></title>
     <link rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/office-125/1000/news-512.png"/>
-=======
-<<<<<<< HEAD
+
         <title><%= results[0].name%></title>
         <link rel="icon" type="image/png" href="./anh/icon/logo.png"/>
     
-=======
->>>>>>> 0670523f31058e1975f9dbb8f5b1f939dc837a1f
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= results[0].name%></title>
 
->>>>>>> de59de112daaa72f9efcea8a7ba82f0807affe0b
+
 
 
     <style>
@@ -889,12 +886,12 @@
                 </h1>
                 <!--ngày tháng năm VÀ chia sẻ mạng xã hội------------------>
                 <div class="thoigianLink">
-                    <div class="thoigian" style="margin-top: 9px;">
+                    <div class="thoigian" style="margin-top: 9px;float: right;">
                         <%= results[0].time%>
                     </div>
                     <br>
                    
-                    <div style="float:right;z-index: 0;" class="fb-share-button" data-href="https://news-hot.herokuapp.com/<%= results[0].type%>/<%= results[0].id%>" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxem.vn%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+                   
                     <div style="overflow: auto"></div>
                 </div>
                 <!--tiêu đề con thứ 2-------------------------------------------------------------->
@@ -937,12 +934,15 @@
                 </div>
 
                 <!------icon link chia sẻ------->
-
-                <div style="float: right;padding-top: 7px">
-                    <span style="font-size: 150%"><b> <%= results[0].author%></b> </span>
+                <div >
+                    <div style="float: left;z-index: 0; padding: 20 0px" class="fb-share-button" data-href="https://news-hot.herokuapp.com/<%= results[0].type%>/<%= results[0].id%>" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxem.vn%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+                    <div style="float: right;padding: 20 0px">
+                        <span style="font-size: 150%"><b> <%= results[0].author%></b> </span>
+                    </div>
                 </div>
-                <!--table quảng cáo-->
-                <div class="fb-comments" data-href="https://news-hot.herokuapp.com/<%= results[0].type%>/<%= results[0].id%>" data-width="auto" data-numposts="5"></div>
+               
+                <!--Bih luan-->
+                <div  class="fb-comments" data-href="https://news-hot.herokuapp.com/<%= results[0].type%>/<%= results[0].id%>" data-width="auto" data-numposts="5"></div>
 
 
 

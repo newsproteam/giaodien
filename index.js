@@ -45,16 +45,15 @@ app.get("/", function(req, res) {
 app.post('/', urlencodedParser, function(req, res) {
     var word = req.body.word;
     word = word.toLowerCase();
-    var sql = "select name,time,author,image1,image2,type1,type,id from bongda " +
-        "union select name,time,author,image1,image2,type1,type,id from kinhdoanh " +
-        "union select name,time,author,image1,image2,type1,type,id from thitruong " +
-        "union select name,time,author,image1,image2,type1,type,id from suckhoe " +
-        "union select name,time,author,image1,image2,type1,type,id from hitech " +
-        "union select name,time,author,image1,image2,type1,type,id from showbiz " +
-        "union select name,time,author,image1,image2,type1,type,id from thegioi " +
-        "union select name,time,author,image1,image2,type1,type,id from thethao " +
-        "union select name,time,author,image1,image2,type1,type,id from phaidep " +
-        "union select name,time,author,image1,image2,type1,type,id from amthuc ";
+    var sql = "select name,time,author,image1,image2,type1,type,id,content1 from bongda " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from kinhdoanh " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from thitruong " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from suckhoe " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from hitech " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from showbiz " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from thegioi " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from phaidep " +
+        "union select name,time,author,image1,image2,type1,type,id,content1 from amthuc ";
     var pos = [];
     con.query(sql, function(error, results, fields) {
         if (error) throw error;
